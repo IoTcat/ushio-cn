@@ -1,0 +1,36 @@
+[submodule "lib/anti-ddos"]
+	path = lib/anti-ddos
+	url = git@github.com:iotcat/anti-ddos
+[submodule "lib/huaweicloud-sdk-php-obs"]
+	path = lib/huaweicloud-sdk-php-obs
+	url = git@github.com:iotcat/huaweicloud-sdk-php-obs
+[submodule "lib/qcloudsms"]
+	path = lib/qcloudsms
+	url = git@github.com:iotcat/qcloudsms
+[submodule "www/acg.watch"]
+	path = www/acg.watch
+	url = git@github.com:iotcat/acg.watch
+[submodule "www/api"]
+	path = www/api
+	url = git@github.com:iotcat/ushio-api
+[submodule "www/filebed"]
+	path = www/filebed
+	url = git@github.com:iotcat/ushio-filebed
+[submodule "www/img"]
+	path = www/img
+	url = git@github.com:iotcat/ushio-img
+[submodule "www/imgbed"]
+	path = www/imgbed
+	url = git@github.com:iotcat/ushio-imgbed
+[submodule "www/log"]
+	path = www/log
+	url = git@github.com:iotcat/ushio-log
+[submodule "www/session"]
+	path = www/session
+	url = git@github.com:iotcat/ushio-session
+[submodule "www/shorturl"]
+	path = www/shorturl
+	url = git@github.com:iotcat/ushio-shorturl
+[submodule "www/ushio-win-server"]
+	path = www/ushio-win-server
+	url = git@github.com:iotcat/ushio-win-server
