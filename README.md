@@ -13,7 +13,7 @@
  - `22`: ssh
  - `80`: http
  - `443`: https/wss
- - '1688': kms
+ - `1688`: kms
 
  
 ## iptables策略
@@ -70,11 +70,17 @@ iptables -A INPUT -p tcp --dport 443 -j ACCEPT
  - onedrive.yimian.xyz
  - session.yimian.xyz
  - kms.yimian.xyz
+ - frp.yimian.xyz
+ - onedrive.yimian.xyz
+ - shorturl.yimian.xyz
+ - eee.dog
+ - dns.yimian.xyz
+ - acg.watch
 
 ## dokcer集群
- - redis
- - emqx
+```docker-compose.yml
 
+```
 
 ## 文件结构
 ```
@@ -147,6 +153,17 @@ iptables -A INPUT -p tcp --dport 443 -j ACCEPT
  - 部署filebed
  - 接入log
  - 接入session
+ - 部署ushio-monitor
+ - 接入serverstatus
+ 
+--------------------------------
 **2020-6-19**
  - 接入oneindex
  - 接入kms
+ - 接入acg.watch
+ - 接入oneindex
+ - 部署frp
+ - 部署shorturl
+ - 部署dnsmasq
+ 
+-------------------------------------
