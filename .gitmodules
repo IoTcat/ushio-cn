@@ -34,3 +34,9 @@
 [submodule "www/ushio-win-server"]
 	path = www/ushio-win-server
 	url = git@github.com:iotcat/ushio-win-server
+[submodule "www/iotcat.me"]
+	path = www/iotcat.me
+	url = git@github.com:iotcat/iotcat.me-homepage
+[submodule "www/blog"]
+	path = www/blog
+	url = git@github.com:iotcat/eee.dog-public
