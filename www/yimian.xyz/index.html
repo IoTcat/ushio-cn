@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <title>清烛隐逸</title>
+    <meta name="description" content="IoTcat's Homepage">
+    <meta name="keywords" content="iotcat,呓喵酱,yimian">
+    <link rel="icon" href="https://cdn.yimian.xyz/img/head/head3r.ico">
+    <link rel="shortcut icon" href="https://cdn.yimian.xyz/img/head/head3r.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.yimian.xyz/iotcat-homepage/main.css"></head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.yimian.xyz/shaky/shaky.css">
+    <script src="https://cdn.yimian.xyz/ushio-js/ushio-head.min.js"></script>
+    <style type="text/css">
+      #ap-f{
+        position: absolute;
+        z-index: 9999;
+      }
+    </style>
+  <body class="panel-cover" id="bg" style="background-image:url(https://api.yimian.xyz/img/?size=1920x1080&id=75)">
+    <script type="text/javascript">function change_bg() {
+        document.getElementById("bg").style = "background-image: url('https://api.yimian.xyz/img/?size=1920x1080')"
+      }</script>
+    <div class="panel-main">
+      <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+          <a href="#" onclick="change_bg()" title="">
+            <img src="https://cdn.yimian.xyz/img/head/head.png" alt="IoTcat's logo" class="panel-cover__logo logo"></a>
+          <h1 class="panel-cover__title panel-title">
+            <a href="https://iotcat.me" title="Homepage">清烛隐逸</a></h1>
+          <span class="panel-cover__subtitle panel-subtitle">
+            <div id="hitokoto">『少女祈祷中…』</div></span>
+          <hr class="panel-cover__divider">
+          <p class="panel-cover__description">嗨，这里是清烛隐逸，专注于研究 2.3 次元钟摆运动。</p>
+          <p class="panel-cover__description" style="color:#CCC;font-size:.8em">物联控 / ACG / JS粉 / PHPer / 新疆铁路大学 / 京吹 </p>
+          <div class="navigation-wrapper">
+            <div>
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item">
+                    <a id="ushio-blog" href="https://www.eee.dog/" title="访问博客">博客</a></li>
+                  <li class="navigation__item">
+                    <a id="ushio-aboutme" href="https://www.eee.dog/" title="About">关于</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+                  <li class="navigation__item">
+                    <a href="https://wpa.qq.com/msgrd?v=3&uin=569641921&site=qq&menu=yes" title="QQ" target="_blank">
+                      <i class="social fa fa-qq"></i>
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="https://t.me/iotcat" title="Telegeam" target="_blank">
+                      <i class="social fa fa-telegram"></i>
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="https://github.com/iotcat" title="Github" target="_blank">
+                      <i class="social fa fa-github"></i>
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="https://www.eee.dog/feed/" rel="author" title="RSS" target="_blank">
+                      <i class="social fa fa-rss"></i>
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="mailto:i@iotcat.me" title="Email">
+                      <i class="social fa fa-envelope"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <footer class="footer">
+            <p>&copy; 2018-
+              <script>document.write((new Date).getFullYear());</script> iotcat |
+              <a style="TEXT-DECORATION:none" href="http://www.beian.miit.gov.cn/" rel="nofollow" target="_blank">
+                <font color="#b3b3b3">鲁ICP备18022823号-1</font></a> | Powered By <a id="ushio-homepage" href="https://ushio.xyz"><span class="shaky">Ushio</span></a></p>
+          </footer>
+        </div>
+      </div>
+      <div class="panel-cover--overlay cover-slate"></div>
+    </div>
+    <script type="text/javascript" src="https://cdn.yimian.xyz/iotcat-homepage/main.js"></script>
+    <script src="https://cdn.yimian.xyz/ushio-js/ushio-footer.min.js"></script>
+    <script type="text/javascript">
+      $.get("https://api.yimian.xyz/words/", function(res){
+        $('#hitokoto').html(res);
+      });
+    </script>
+  </body>
+
+</html>

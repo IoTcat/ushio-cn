@@ -40,3 +40,6 @@
 [submodule "www/blog"]
 	path = www/blog
 	url = git@github.com:iotcat/eee.dog-public
+[submodule "www/pay"]
+	path = www/pay
+	url = git@github.com:IoTcat/Ushio-pay.git
