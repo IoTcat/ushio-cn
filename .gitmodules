@@ -43,3 +43,6 @@
 [submodule "www/pay"]
 	path = www/pay
 	url = git@github.com:IoTcat/Ushio-pay.git
+[submodule "www/wiot"]
+	path = www/wiot
+	url = git@github.com:IoTcat/wIoT-OTA.git
