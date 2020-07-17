@@ -46,3 +46,6 @@
 [submodule "www/wiot"]
 	path = www/wiot
 	url = git@github.com:IoTcat/wIoT-OTA.git
+[submodule "www/mksec"]
+	path = www/mksec
+	url = git@github.com:IoTcat/sentence-generator.git
