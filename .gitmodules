@@ -49,3 +49,6 @@
 [submodule "www/mksec"]
 	path = www/mksec
 	url = git@github.com:IoTcat/sentence-generator.git
+[submodule "www/wanzongbiz"]
+	path = www/wanzongbiz
+	url = git@github.com:iotcat/wanzongbiz.com.git
