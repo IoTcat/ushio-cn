@@ -52,3 +52,9 @@
 [submodule "www/wanzongbiz"]
 	path = www/wanzongbiz
 	url = git@github.com:iotcat/wanzongbiz.com.git
+[submodule "www/login"]
+	path = www/login
+	url = git@github.com:IoTcat/ushio-login.git
+[submodule "www/auth"]
+	path = www/auth
+	url = git@github.com:IoTcat/ushio-auth.git
