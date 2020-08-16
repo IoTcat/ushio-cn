@@ -58,3 +58,6 @@
 [submodule "www/auth"]
 	path = www/auth
 	url = git@github.com:IoTcat/ushio-auth.git
+[submodule "www/v2ray"]
+	path = www/v2ray
+	url = git@github.com:IoTcat/ushio-v2ray.git
