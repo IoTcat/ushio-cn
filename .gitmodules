@@ -61,3 +61,6 @@
 [submodule "www/v2ray"]
 	path = www/v2ray
 	url = git@github.com:IoTcat/ushio-v2ray.git
+[submodule "www/user"]
+	path = www/user
+	url = git@github.com:IoTcat/ushio-user.git
