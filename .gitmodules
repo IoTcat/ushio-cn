@@ -64,3 +64,6 @@
 [submodule "www/user"]
 	path = www/user
 	url = git@github.com:IoTcat/ushio-user.git
+[submodule "www/guide"]
+	path = www/guide
+	url = git@github.com:iotcat/ushio-guide.git
