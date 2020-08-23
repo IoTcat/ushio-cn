@@ -67,3 +67,6 @@
 [submodule "www/guide"]
 	path = www/guide
 	url = git@github.com:iotcat/ushio-guide.git
+[submodule "www/cp-acc"]
+	path = www/cp-acc
+	url = git@github.com:IoTcat/cp-acc.git
