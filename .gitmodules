@@ -70,3 +70,6 @@
 [submodule "www/cp-acc"]
 	path = www/cp-acc
 	url = git@github.com:IoTcat/cp-acc.git
+[submodule "www/cv"]
+	path = www/cv
+	url = git@github.com:iotcat/cv.git
