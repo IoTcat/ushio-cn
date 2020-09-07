@@ -73,3 +73,6 @@
 [submodule "www/cv"]
 	path = www/cv
 	url = git@github.com:iotcat/cv.git
+[submodule "www/github"]
+	path = www/github
+	url = git@github.com:IoTcat/ushio-github.git
