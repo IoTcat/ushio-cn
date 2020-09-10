@@ -1,0 +1,86 @@
+**** 11/07/18 16:08:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test"  [ E:\ee103_exp1\ee103_exp1-pspicefiles\schematic1\test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\lymia\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EE103_EXP1
+R_R1         N00227 N00093  0.18k TC=0,0 
+R_R2         N00093 N00097  0.1k TC=0,0 
+R_R3         N00097 0  0.12k TC=0,0 
+V_V1         N00227 0 10Vdc
+
+**** RESUMING test.cir ****
+.END
+ 
+
+**** 11/07/18 16:08:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test"  [ E:\ee103_exp1\ee103_exp1-pspicefiles\schematic1\test.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00093)    5.5000 (N00097)    3.0000 (N00227)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.500E-02
+
+    TOTAL POWER DISSIPATION   2.50E-01  WATTS
+
+
+
+          JOB CONCLUDED
+ 
+
+**** 11/07/18 16:08:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test"  [ E:\ee103_exp1\ee103_exp1-pspicefiles\schematic1\test.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+ 

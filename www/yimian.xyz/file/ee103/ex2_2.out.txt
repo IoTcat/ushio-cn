@@ -1,0 +1,90 @@
+
+**** 11/07/18 17:43:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test"  [ E:\ee103_exp1\ee103_exp1-pspicefiles\schematic1\test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\lymia\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EE103_EXP1
+R_R1         N00227 N00685  0.68k TC=0,0 
+R_R2         0 N00685  1.5k TC=0,0 
+R_R3         0 N00685  1.2k TC=0,0 
+V_V1         N00227 0 12Vdc
+V_V2         N00825 0 5.94Vdc
+R_R5         N00825 N01160  0.3366k TC=0,0 
+R_R4         0 N00685  1k TC=0,0 
+R_R6         0 N01160  1k TC=0,0 
+
+**** RESUMING test.cir ****
+.END
+
+**** 11/07/18 17:43:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test"  [ E:\ee103_exp1\ee103_exp1-pspicefiles\schematic1\test.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00227)   12.0000 (N00685)    4.4444 (N00825)    5.9400 (N01160)    4.4441 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.111E-02
+    V_V2        -4.444E-03
+
+    TOTAL POWER DISSIPATION   1.60E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/07/18 17:43:36 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-test"  [ E:\ee103_exp1\ee103_exp1-pspicefiles\schematic1\test.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

@@ -1,0 +1,17 @@
+Dim fs, ts
+set fs = CreateObject("Scripting.FileSystemObject")
+set ts = fs.OpenTextFile("cache/msg.dat",1)
+
+msg = ts.ReadAll   
+dim ans
+set fso=createobject("scripting.filesystemobject")
+ans = msgbox(msg , vbyesno + vbinformation,"AS2 Message")
+if ans = vbyes then
+s="1"
+else
+s="0"
+end if
+
+set file=fso.createtextfile("cache/res.dat")
+file.write s
+file.close

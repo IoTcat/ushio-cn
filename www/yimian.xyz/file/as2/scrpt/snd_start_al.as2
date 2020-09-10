@@ -1,0 +1,5 @@
+dim  strvbs
+strvbs = "snd_allclr.vbs" 
+
+set oshell = createobject("wscript.shell")
+oshell.run strvbs,false,false

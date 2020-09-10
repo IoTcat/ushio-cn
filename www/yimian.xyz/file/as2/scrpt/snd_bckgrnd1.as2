@@ -1,0 +1,8 @@
+Do
+Dim wmp 
+Set wmp = CreateObject("WMPlayer.OCX") 
+wmp.URL = "msc/background1.mp3" 
+Do Until wmp.playState = 1 
+WScript.Sleep 1000 
+Loop
+Loop

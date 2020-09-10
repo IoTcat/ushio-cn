@@ -1,0 +1,6 @@
+Dim wmp 
+Set wmp = CreateObject("WMPlayer.OCX") 
+wmp.URL = "msc/gameover.mp3" 
+Do Until wmp.playState = 1 
+WScript.Sleep 1000 
+Loop

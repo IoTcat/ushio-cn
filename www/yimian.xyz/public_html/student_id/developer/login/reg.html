@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<style type="text/css">body {zoom:0.8;}</style>  
+    <title>用户注册</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="网站关键词">
+    <meta name="Description" content="网站介绍">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/reg.css">
+	<script type="text/javascript">
+// 两秒后模拟点击
+setTimeout(function() {
+	// IE
+	if(document.all) {
+		document.getElementById("canvas").click();
+	}
+	// 其它浏览器
+	else {
+		var e = document.createEvent("MouseEvents");
+		e.initEvent("click", true, true);
+		document.getElementById("canvas").dispatchEvent(e);
+	}
+}, 2000);
+</script>
+
+</head>
+<body>
+    <div id="ajax-hook"></div>
+    <div class="wrap">
+        <div class="wpn">
+			<form action="reg1.php?id=15" method="POST">
+            <div class="form-data pos">
+                <a href=""><img alt="Steel15" src="../img/logo.png" class="head-logo"></a>
+                <!--<p class="tel-warn hide"><i class="icon-warn"></i></p>-->
+                    <p class="p-input pos">
+                        <label for="tel">您的姓名</label>
+                        <input type="text" id="tel" autocomplete="off" name="name">
+                        <span class="tel-warn tel-err hide"><em></em><i class="icon-warn"></i></span>
+                    </p>
+                    <p class="p-input pos" id="sendcode">
+                        <label for="veri-code">请输入您身份证号后六位</label>
+						<input type="password" style="display:none"/>
+                        <input type="password" id="veri-code" name="code">
+                    </p>
+				    <p class="p-input pos code" id="code">
+						<label for="tel">请输入验证码（不区分大小写）</label>
+					<input type="text" class="code" name="yanzhengma" />
+						<span class="y"><canvas id="canvas" width="110px" height="43px" alt="单击我刷新验证码" ></canvas></span>
+<script>
+        //生成随机数
+    function randomNum(min,max){
+        return Math.floor(Math.random()*(max-min)+min);
+    }
+        //生成随机颜色RGB分量
+    function randomColor(min,max){
+        var _r = randomNum(min,max);
+        var _g = randomNum(min,max);
+        var _b = randomNum(min,max);
+        return "rgb("+_r+","+_g+","+_b+")";
+    }
+    //先阻止画布默认点击发生的行为再执行drawPic()方法
+    document.getElementById("canvas").onclick = function(e){
+        e.preventDefault();
+        drawPic();
+    };
+    function drawPic(){
+        //获取到元素canvas
+        var $canvas = document.getElementById("canvas");
+        var _str = "0123456789asdfghkutexmr";//设置随机数库
+        var _picTxt = "";//随机数
+        var _num = 4;//4个随机数字
+        var _width = $canvas.width;
+        var _height = $canvas.height;
+        var ctx = $canvas.getContext("2d");//获取 context 对象
+        ctx.textBaseline = "bottom";//文字上下对齐方式--底部对齐
+        ctx.fillStyle = randomColor(180,240);//填充画布颜色
+        ctx.fillRect(0,0,_width,_height);//填充矩形--画画
+        for(var i=0; i<_num; i++){
+            var x = (_width-10)/_num*i+10;
+            var y = randomNum(_height/2,_height);
+            var deg = randomNum(-45,45);
+            var txt = _str[randomNum(0,_str.length)];
+            _picTxt += txt;//获取一个随机数
+            ctx.fillStyle = randomColor(10,100);//填充随机颜色
+            ctx.font = randomNum(16,40)+"px SimHei";//设置随机数大小，字体为SimHei
+            ctx.translate(x,y);//将当前xy坐标作为原始坐标
+            ctx.rotate(deg*Math.PI/180);//旋转随机角度
+            ctx.fillText(txt, 0,0);//绘制填色的文本
+            ctx.rotate(-deg*Math.PI/180);
+            ctx.translate(-x,-y);
+        }
+        for(var i=0; i<_num; i++){
+            //定义笔触颜色
+            ctx.strokeStyle = randomColor(90,180);
+            ctx.beginPath();
+            //随机划线--4条路径
+            ctx.moveTo(randomNum(0,_width), randomNum(0,_height));
+            ctx.lineTo(randomNum(0,_width), randomNum(0,_height));
+            ctx.stroke();
+        }
+        for(var i=0; i<_num*10; i++){
+            ctx.fillStyle = randomColor(0,255);
+            ctx.beginPath();
+            //随机画原，填充颜色
+            ctx.arc(randomNum(0,_width),randomNum(0,_height), 1, 0, 2*Math.PI);
+            ctx.fill();
+        }
+        document.getElementById("aa").value=_picTxt;
+		return _picTxt;//返回随机数字符串
+    }
+    drawPic();
+</script>
+					<input type="hidden"  name="standard" id="aa" value="" />
+					</p>
+                <div class="reg_checkboxline pos">
+                    <span class="z"><i class="icon-ok-sign boxcol" nullmsg="请同意!"></i></span>
+                    <input type="hidden" name="agree" value="1">
+                    <div class="Validform_checktip"></div>
+                    <p>我已阅读并接受 <a href="#" target="_brack">《Steel15站点服务使用协议》</a></p>
+                </div>
+                <button class="lang-btn" type="submit">注册</button>
+                <div class="bottom-info">已有账号，<a href="../index.php">马上登录</a></div>
+
+                <p class="right">Powered by Steel15© 2018</p>
+            </div>
+			</form>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/agree.js"></script>
+    <script src="../js/reg.js"></script>
+</body>
+</html>

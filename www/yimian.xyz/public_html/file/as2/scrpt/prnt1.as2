@@ -1,0 +1,9 @@
+Dim fs, ts
+set fs = CreateObject("Scripting.FileSystemObject")
+set ts = fs.OpenTextFile("cache/msg.dat",1)
+
+msg = ts.ReadAll   
+dim ans
+set fso=createobject("scripting.filesystemobject")
+ans = msgbox(msg , vbOKOnly + vbinformation,"AS2 Message")
+
