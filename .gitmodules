@@ -76,3 +76,6 @@
 [submodule "www/github"]
 	path = www/github
 	url = git@github.com:IoTcat/ushio-github.git
+[submodule "www/report"]
+	path = www/report
+	url = git@github.com:IoTcat/ushio-report.git
