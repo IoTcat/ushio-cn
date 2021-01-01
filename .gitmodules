@@ -16,9 +16,6 @@
 [submodule "www/filebed"]
 	path = www/filebed
 	url = git@github.com:iotcat/ushio-filebed
-[submodule "www/img"]
-	path = www/img
-	url = git@github.com:iotcat/ushio-img
 [submodule "www/imgbed"]
 	path = www/imgbed
 	url = git@github.com:iotcat/ushio-imgbed
