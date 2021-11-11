@@ -7,9 +7,6 @@
 [submodule "lib/qcloudsms"]
 	path = lib/qcloudsms
 	url = git@github.com:iotcat/qcloudsms
-[submodule "www/acg.watch"]
-	path = www/acg.watch
-	url = git@github.com:iotcat/acg.watch
 [submodule "www/api"]
 	path = www/api
 	url = git@github.com:iotcat/ushio-api
@@ -34,9 +31,6 @@
 [submodule "www/iotcat.me"]
 	path = www/iotcat.me
 	url = git@github.com:iotcat/iotcat.me-homepage
-[submodule "www/blog"]
-	path = www/blog
-	url = git@github.com:iotcat/eee.dog-public
 [submodule "www/pay"]
 	path = www/pay
 	url = git@github.com:IoTcat/Ushio-pay.git
